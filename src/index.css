@@ -1,0 +1,143 @@
+/* בסיס כללי */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  direction: rtl;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* כרטיסים כלליים */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top,
+.card-img {
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* כפתורים */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* שדות טופס */
+.form-control {
+  border-radius: 8px;
+  background-color: #f1f3f5;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* מצב כהה - Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-subtitle,
+body.dark-mode .card-text {
+  color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #6200ea;
+  border-color: #6200ea;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #3700b3;
+  border-color: #3700b3;
+}
+
+body.dark-mode .form-control {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbb;
+}
+
+/* Navbar במצב כהה */
+body.dark-mode .navbar,
+body.dark-mode .footer {
+  background-color: #1e1e1e !important;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .navbar-brand {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .dropdown-item {
+  color: #e0e0e0;
+}
+
+body.dark-mode .dropdown-item:hover {
+  background-color: #333;
+}
